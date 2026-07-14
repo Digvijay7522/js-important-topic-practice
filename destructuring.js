@@ -106,3 +106,4 @@ console.log(city, zip)
 // 7- i print it using default values while destructuring
 // 8- i print it using renaming while destructuring
 // 9- i print it using nested destructuring with default values
+

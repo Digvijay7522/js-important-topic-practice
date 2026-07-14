@@ -125,6 +125,23 @@ const orderCancelled=orders.some(order=>order.status==='cancelled')
 console.log(orderCancelled) // true
 
 
-const greaterThan100=orders.every(order=>order.amount>100)
+// Q14. Check if ALL orders have amount greater than 100 using every().
 
-console.log(greaterThan100) // true
+const greaterThan100=orders.every(order=>order.amount>100)
+console.log(greaterThan100)// false because order with id 5 has amount 70 which is less than 100
+
+ let totlapendingAmount=orders.filter(order=>order.status==='pending').reduce((total,order)=>total+order.amount,0)
+ console.log(totlapendingAmount) 
+
+ const userScores = {
+    dig: 85,
+    ravi: 92,
+    simran: 78,
+    aman: 65
+}
+
+const arr=Object.entries(userScores).map(([name,score])=>({name,score}))
+console.log(arr) // [ { name: 'dig', score: 85 }, { name: 'ravi', score: 92 }, { name: 'simran', score: 78 }, { name: 'aman', score: 65 } ]
+
+
+
